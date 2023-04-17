@@ -1,0 +1,44 @@
+Last login: Sun Apr 16 10:11:41 on ttys000
+alena@Air-vlad ~ % cd Documents
+alena@Air-vlad Documents % pwd
+/Users/alena/Documents
+alena@Air-vlad Documents % mkdir Folder
+alena@Air-vlad Documents % cd Folder
+alena@Air-vlad Folder % mkdir subfolder1 subfolder2 subfolder3
+alena@Air-vlad Folder % cd subfolder1
+alena@Air-vlad subfolder1 % touch file1.txt file2.txt file3.txt file4.json file5.json   
+alena@Air-vlad subfolder1 % mkdir lk1 lk2 lk3
+alena@Air-vlad subfolder1 % ls -la
+total 0
+drwxr-xr-x  10 alena  staff  320 Apr 16 11:13 .
+drwxr-xr-x   5 alena  staff  160 Apr 16 11:11 ..
+-rw-r--r--   1 alena  staff    0 Apr 16 11:13 file1.txt
+-rw-r--r--   1 alena  staff    0 Apr 16 11:13 file2.txt
+-rw-r--r--   1 alena  staff    0 Apr 16 11:13 file3.txt
+-rw-r--r--   1 alena  staff    0 Apr 16 11:13 file4.json
+-rw-r--r--   1 alena  staff    0 Apr 16 11:13 file5.json
+drwxr-xr-x   2 alena  staff   64 Apr 16 11:13 lk1
+drwxr-xr-x   2 alena  staff   64 Apr 16 11:13 lk2
+drwxr-xr-x   2 alena  staff   64 Apr 16 11:13 lk3
+alena@Air-vlad subfolder1 % vim file1.txt
+alena@Air-vlad subfolder1 % cd ..
+alena@Air-vlad Folder % mv subfolder1/file1.txt subfolder2
+alena@Air-vlad Folder % mv subfolder1/file2.txt subfolder2
+alena@Air-vlad Folder % cp subfolder1/file3.txt subfolder3 
+alena@Air-vlad Folder % cp subfolder1/file5.json subfolder3
+alena@Air-vlad Folder % find . -name "file1.txt"
+./subfolder2/file1.txt
+alena@Air-vlad Folder % tail -f ./subfolder2/file1.txt | grep "abc"
+abc
+^C
+alena@Air-vlad Folder % head -3 ./subfolder2/file1.txt
+hello
+hi
+hi there
+alena@Air-vlad Folder % tail -3 ./subfolder2/file1.txt
+abc
+Cba
+Abc% 
+alena@Air-vlad Folder % less ./subfolder2/file1.txt 
+alena@Air-vlad Folder % date
+Sun Apr 16 12:29:20 CEST 2023
