@@ -10,8 +10,8 @@
 10) + написать туда что-нибудь, любой текст. 	I Hello 
 11) + сохранить и выйти.	esc. :wq
 12) Выйти из папки на уровень выше		cd ..
-13) переместить любые 2 файла, которые вы создали, в любую другую папку. 	mv subfolder1/file1.txt subfolder2	mv subfolder1/file2.txt subfolder2
-14) скопировать любые 2 файла, которые вы создали, в любую другую папку.	cp subfolder1/file3.txt subfolder3  cp subfolder1/file5.json subfolder3
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. 	mv subfolder1/file1.txt subfolder1/file2.txt subfolder2	
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.	cp subfolder1/file3.txt subfolder1/file5.json subfolder3 
 15) Найти файл по имени		find . -name “file1.jtxt”					
 16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.	tail -f ./subfolder2/file1.txt | grep "abc"
 17) вывести несколько первых строк из текстового файла	head -3 ./subfolder2/file1.txt
